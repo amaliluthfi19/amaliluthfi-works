@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-luthfi",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx -y serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
