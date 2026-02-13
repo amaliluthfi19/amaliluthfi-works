@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# Footprints of My Journey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In the heart of Jakarta, where people crowd together in tangled lives to write their own stories. So i build this website to gather my footprints of my journey and tell the story. story of me delivering value to the people.
 
-Currently, two official plugins are available:
+## The Body of Work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As my journey continue, here is the footprints of my journey so far.
 
-## React Compiler
+*   **Mitsubishi Motors Indonesia**: Vehicle ownership & aftersales app providing vehicle management, service booking, emergency support, and exclusive promos. Built with Flutter and native iOS/Android integration.
+*   **Loket Screen**: Movie theater booking app with interactive seat selection, F&B ordering, and VOD voucher purchase. Enabled Rp 3M+ GMV in 3 months during MVP validation.
+*   **Loket X**: Event & recreational ticketing app supporting digital ticket purchases for events, theme parks, and attractions. Features interactive event calendar for date-based discovery.
+*   **Raya App**: Mobile banking app with Flutter and Next.js WebView communication layer. Developed Saku Bisnis registration and QRIS Merchant feature, driving 5,000+ merchant activations in first 6 months.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## The Tools
 
-## Expanding the ESLint configuration
+I build this portfolio with:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **The Foundations**: React 19 and TypeScript, the twin pillars of this very site.
+- **The Speed**: Vite, the engine that turns thoughts into reality before the coffee grows cold.
+- **The Discipline**: Custom CSS. No shortcuts, no borrowed styles.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## The Never Ending Journey
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This portfolio is not just a list of products. It is a story told in code. It is about the ability to take a problem and turn it into a solution, to take a void and fill it with something that works. It is the work of a developer who understands that behind every screen is a person, and behind every person is a need.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+As long as people exist, the journey never ends to give value to the people and more footprint will follow. 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Built with React, TypeScript, and a sense of destiny.*
