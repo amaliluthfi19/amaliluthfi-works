@@ -45,6 +45,7 @@ const Navbar: React.FC = () => {
                     <li><a href="#about" className="nav-link" onClick={(e) => scrollToSection(e, '#about')}>About</a></li>
                     <li><a href="#projects" className="nav-link" onClick={(e) => scrollToSection(e, '#projects')}>Projects</a></li>
                     <li><a href="#experience" className="nav-link" onClick={(e) => scrollToSection(e, '#experience')}>Experience</a></li>
+                    <li><a href="#certificates" className="nav-link" onClick={(e) => scrollToSection(e, '#certificates')}>Certificates</a></li>
                     <li><a href="#contact" className="nav-link" onClick={(e) => scrollToSection(e, '#contact')}>Contact</a></li>
                 </ul>
                 <div className={`hamburger ${isActive ? 'active' : ''}`} id="hamburger" onClick={toggleMenu}>

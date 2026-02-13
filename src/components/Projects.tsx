@@ -4,9 +4,10 @@ import ProjectCard from './ProjectCard';
 const Projects: React.FC = () => {
     const projectList = [
         {
-            title: "Automotive APP Confidential",
+            title: "Mitsubishi Motors Indonesia",
             description: "Vehicle ownership & aftersales app providing vehicle management, service booking, emergency support, and exclusive promos. Built with Flutter and native iOS/Android integration.",
-            image: "/assets/projects/mmid.jpg",
+            image: "/assets/projects/mmid-home.jpg",
+            record: "/assets/projects/mmid-record.avif",
             tech: ["Flutter", "Swift", "Kotlin/XML", "Newrelic", "MobX"],
             date: "Sep 2025 - Present",
             company: "Transcosmos Indonesia",

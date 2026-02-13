@@ -729,6 +729,141 @@ body {
 }
 
 /* ===================================
+   Certificates Section
+   =================================== */
+.certificates {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-bg-primary);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.certificate-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+}
+
+.certificate-card {
+    background: var(--color-bg-glass);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: var(--transition-base);
+    cursor: default;
+}
+
+.certificate-link-wrapper .certificate-card {
+    cursor: pointer;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px) translateZ(0);
+    box-shadow: 0 32px 100px rgba(0, 0, 0, 0.65);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.certificate-image-wrapper {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: radial-gradient(circle at top left, rgba(168, 85, 247, 0.15), transparent),
+        radial-gradient(circle at bottom right, rgba(45, 212, 191, 0.15), transparent);
+    padding: var(--spacing-sm);
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: calc(var(--radius-md) - 4px);
+    object-fit: cover;
+}
+
+.certificate-name {
+    font-family: var(--font-display);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.certificate-link-wrapper:hover .certificate-name {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent-purple);
+    text-decoration-thickness: 2px;
+}
+
+.certificate-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+    pointer-events: none;
+}
+
+.certificate-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    pointer-events: none;
+}
+
+.certificate-modal-content {
+    position: relative;
+    z-index: 10001;
+    max-width: 50vw;
+    max-height: 60vh;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.7);
+    pointer-events: auto;
+    background: #0a0a0f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: scaleUp 0.3s ease;
+}
+
+.certificate-modal-content img {
+    width: auto;
+    height: auto;
+    max-width: 50vw;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===================================
    Contact Section
    =================================== */
 .contact {
