@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                     <h2 className="hero-title">Mobile Developer</h2>
                     <p className="hero-subtitle">Flutter • iOS (SwiftUI) • Android (Kotlin) • React Native</p>
                     <p className="hero-description">
-                        Crafting exceptional mobile experiences for fintech and booking platforms.
+                        Crafting exceptional mobile experiences for fintech and booking platforms,and automotive industry.
                         Proven track record of delivering high-impact features that drive business growth.
                     </p>
                     <div className="hero-cta">

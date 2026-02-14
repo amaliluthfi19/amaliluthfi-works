@@ -6,3 +6,28 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Content Security Policy - allows inline styles/scripts needed for React/Vite
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'"
+    
+    # Prevent clickjacking attacks
+    X-Frame-Options = "DENY"
+    
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+    
+    # Enable browser XSS protection
+    X-XSS-Protection = "1; mode=block"
+    
+    # Control referrer information
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Restrict browser features and APIs
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    
+    # Strict Transport Security (HTTPS enforcement)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
