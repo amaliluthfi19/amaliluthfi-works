@@ -4,22 +4,22 @@ const Experience: React.FC = () => {
     const experiences = [
         {
             date: 'Aug 2025 - Present',
-            title: 'Mobile Developer',
+            title: 'Frontend Developer',
             company: 'Transcosmos Indonesia (Salim Group)',
             achievements: [
-                'Built and maintained mobile UI and integrated APIs using Flutter, Swift, and Kotlin',
-                'Improved app stability by reducing crash error rate from 0.68% to 0.52% using New Relic and Firebase Crashlytics',
-                'Implemented Event Tracking using Microsoft Clarity to track user journey'
+                'Hit the ground running — fixed critical deeplink and push notification bugs in the first 2 weeks, lifting campaign reachability by 20%',
+                'Built and shipped a series of React-powered microsites, each tailored with dynamic functionality to support specific business and marketing needs',
+                'Built a polling feature within posts, giving users a fun and interactive way to engage with content directly inside the app'
             ]
         },
         {
             date: 'Aug 2024 - Aug 2025',
-            title: 'Mobile Developer',
+            title: 'Frontend Developer',
             company: 'Loket.com (PT Global Loket Sejahtera)',
             achievements: [
-                'Developed cinema seat selection and other MVP features, enabling Rp 3M+ GMV in 3 months',
-                'Implemented interactive event calendar UI for date-based event discovery',
-                'Integrated backend APIs and built responsive mobile UI using Flutter'
+                'Took ownership of cinema seat selection and key MVP features from scratch, which went on to generate Rp 3M+ in GMV within just 3 months',
+                'Engineered the end-to-end payment gateway flow, ensuring a smooth and reliable transaction experience for users across the platform',
+                'Collaborated with UI/UX to build a component-based design system, bringing consistency and development speed across the entire product team'
             ]
         },
         {
@@ -27,19 +27,29 @@ const Experience: React.FC = () => {
             title: 'Frontend Developer',
             company: 'Bank Raya (BRI Subsidiary)',
             achievements: [
-                'Developed Saku Bisnis registration and QRIS Merchant feature, driving 5,000+ merchant activations',
-                'Integrated WebView callbacks for seamless communication between web and mobile',
-                'Built responsive UI layouts using Flutter and Next.js'
+                'Took ownership of the Saku Bisnis registration flow and QRIS Merchant feature end-to-end, driving 5,000+ merchant activations by year-end and pushing real digital payment adoption across the platform',
+                'Built Saku Anak from the ground up — a feature that made it simple for parents to allocate money for their children and equally easy for kids to receive and spend it',
+                'Bridged the web-native gap by implementing WebView callbacks, making the handoff between web and mobile feel completely invisible to the user'
             ]
         },
         {
             date: 'Oct 2021 - Oct 2023',
-            title: 'Mobile Developer',
+            title: 'Frontend Developer',
             company: 'BuddyKu (MNC Group)',
             achievements: [
-                'Built native bridge using Flutter Method Channel for dynamic app icon switching',
-                'Implemented push notifications using OneSignal and iZooto',
-                'Integrated analytics tracking using Google Analytics (GA4)'
+                'Came in running — resolved 35 out of 73 bugs before the first launch, including core functionality like reactions, load more, and profile management flow',
+                'Wired up GA4 from scratch to turn raw user behavior into actionable insights for the product and marketing teams',
+                'Spotted an opportunity to make the home screen smarter, collaborated with the backend team to make key sections fully dynamic, and turned that idea into a shipped feature'
+            ]
+        },
+        {
+            date: 'March 2021 - Oct 2021',
+            title: 'Software Engineer',
+            company: 'Sprout Digital Labs',
+            achievements: [
+                'Developed project in three industry, banking, e-commerce, and medical industry projects using Flutter, React, and Node.js',
+                'Built end-to-end cart feature including product selection, order summary, and checkout flow across multiple client verticals',
+                'Integrated third-party payment APIs and handled transaction state management for secure and reliable payment processing',
             ]
         }
     ];

@@ -35,11 +35,11 @@ const Hero: React.FC = () => {
                 <div className="hero-text">
                     <p className="hero-greeting">Hi, I'm</p>
                     <h1 className="hero-name">Luthfi Dwi Amali</h1>
-                    <h2 className="hero-title">Mobile Developer</h2>
-                    <p className="hero-subtitle">Flutter • iOS (SwiftUI) • Android (Kotlin) • React Native</p>
+                    <h2 className="hero-title">Frontend Developer</h2>
+                    <p className="hero-subtitle">Flutter  • React-Next.js • iOS (SwiftUI) • Android (Kotlin)</p>
                     <p className="hero-description">
-                        Crafting exceptional mobile experiences for fintech, booking platforms, and automotive industry.
-                        Proven track record of delivering high-impact features that drive business growth.
+                        Specializing in frontend web and mobile development — building seamless, high-performance experiences across fintech, booking platform, and automotive industry.
+                        Proven track record of delivering high-impact features that drive real business growth.
                     </p>
                     <div className="hero-cta">
                         <a href="#projects" className="btn btn-primary">View Projects</a>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
                             <span className="stat-label">GMV Generated for Loket Screen App MVP</span>
                         </div>
                         <div className="stat">
-                            <StatCounter end={4} duration={2000} suffix="+" />
+                            <StatCounter end={5} duration={2000} suffix="+" />
                             <span className="stat-label">Years Experience</span>
                         </div>
                     </div>

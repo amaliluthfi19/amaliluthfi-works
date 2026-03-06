@@ -8,11 +8,10 @@ const About: React.FC = () => {
                 <div className="about-content">
                     <div className="about-text">
                         <p className="about-intro">
-                            Mobile Developer focused on front-end engineering using <strong>Next-React</strong>,
-                            <strong>Flutter</strong>, <strong>iOS (Swift/SwiftUI)</strong>, and <strong>Android (Kotlin)</strong>.
+                            Frontend Developer focused on front-end engineering using  <strong>Flutter</strong>, <strong>Next-Reactjs</strong>, <strong>iOS (Swift/SwiftUI)</strong>, and <strong>Android (Kotlin)</strong>.
                         </p>
                         <p>
-                            Experienced in fintech and booking products with proven early-stage impact, including
+                            Experienced in fintech, booking products and automotive industry with proven early-stage impact, including
                             enabling <strong>5,000+ QRIS merchant activations</strong> and delivering
                             <strong>Rp 3M+ GMV within 3 months</strong> during MVP validation.
                         </p>
@@ -31,20 +30,21 @@ const About: React.FC = () => {
                     </div>
                     <div className="skills-grid">
                         <div className="skill-category">
-                            <h3>Mobile Frameworks</h3>
+                            <h3>Frontend Frameworks</h3>
                             <div className="skill-tags">
-                                <span className="skill-tag">Flutter</span>
-                                <span className="skill-tag">SwiftUI</span>
-                                <span className="skill-tag">React Native</span>
+                            <span className="skill-tag">Flutter</span>
+                            <span className="skill-tag">React-Nextjs</span>
+                            <span className="skill-tag">SwiftUI</span>
+                            <span className="skill-tag">Kotlin</span>
                             </div>
                         </div>
                         <div className="skill-category">
                             <h3>Languages</h3>
                             <div className="skill-tags">
                                 <span className="skill-tag">Dart</span>
+                                <span className="skill-tag">JavaScript</span>
                                 <span className="skill-tag">Swift</span>
                                 <span className="skill-tag">Kotlin</span>
-                                <span className="skill-tag">JavaScript</span>
                             </div>
                         </div>
                         <div className="skill-category">
@@ -61,6 +61,8 @@ const About: React.FC = () => {
                                 <span className="skill-tag">Firebase</span>
                                 <span className="skill-tag">New Relic</span>
                                 <span className="skill-tag">GA4</span>
+                                <span className="skill-tag">Google Map</span>
+                                <span className="skill-tag">Moengage</span>
                                 <span className="skill-tag">OneSignal</span>
                             </div>
                         </div>
