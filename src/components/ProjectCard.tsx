@@ -10,6 +10,7 @@ interface ProjectCardProps {
     impact?: string;
     status?: string;
     record?: string;
+    onClick?: () => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,7 +22,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     company,
     impact,
     status,
-    record
+    record,
+    onClick,
 }) => {
     const cardRef = useRef<HTMLDivElement>(null);
     const [isImageHovered, setIsImageHovered] = useState(false);
@@ -64,6 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            onClick={onClick}
         >
             <div
                 className="project-image"
@@ -100,6 +103,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <span className="project-date">{date}</span>
                     <span className="project-company">{company}</span>
                 </div>
+                {onClick && (
+                    <div className="project-details-hint">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        View architecture & stack
+                    </div>
+                )}
             </div>
         </div>
     );
